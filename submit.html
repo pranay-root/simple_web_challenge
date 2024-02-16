@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Submission Page</title>
+    <style>
+        /* Styles remain the same as before */
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flag Submission Page</h1>
+    <p>Enter the flag in the input field below and click the "Submit" button to check if it is correct.</p>
+
+    <form id="flagForm">
+        <label for="flag">Flag:</label>
+        <input type="text" id="flag" name="flag" required>
+        <br>
+        <button type="button" onclick="checkFlag()">Submit</button>
+    </form>
+
+    <p id="resultMessage"></p>
+
+    <!-- Dynamically generate script tag using JavaScript -->
+    <script>
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'submit.js';
+        document.head.appendChild(scriptElement);
+    </script>
+</body>
+</html>
