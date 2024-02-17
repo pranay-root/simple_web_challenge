@@ -5,8 +5,8 @@ function checkFlag() {
     var secretFlag = 'SCT{iam_secret_but_1_am_not_flag}';
 
     if (userFlag === secretFlag) {
-        document.getElementById('resultMessage').innerHTML = '<span style="color: #2ecc71;">Congratulations! It is the right flag: ' + correctFlag + '</span>';
+        document.getElementById('resultMessage').innerHTML = '<span style="color: #2ecc71;">Congratulations! flag is: ' + correctFlag + '</span>';
     } else {
-        document.getElementById('resultMessage').innerHTML = '<span style="color: #e74c3c;">Try again. It is not the right flag.</span>';
+        document.getElementById('resultMessage').innerHTML = '<span style="color: #e74c3c;">Try again. It is not the secret flag.</span>';
     }
 }
